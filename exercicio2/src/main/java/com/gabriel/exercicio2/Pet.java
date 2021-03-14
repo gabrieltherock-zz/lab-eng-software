@@ -2,23 +2,27 @@ package com.gabriel.exercicio2;
 
 public class Pet {
 
-    private Long id;
+    private int id;
     private String nome;
     private String raca;
     private String especie;
 
-    public Pet(Long id, String nome, String raca, String especie) {
+    public Pet(int id, String nome, String raca, String especie) {
         this.id = id;
         this.nome = nome;
-        this.raca = raca;
         this.especie = especie;
+        this.raca = raca;
     }
 
-    public Long getId() {
+    public Pet() {
+
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
